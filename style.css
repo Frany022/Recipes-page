@@ -77,3 +77,62 @@ body {
 .dropdown-menu > a:hover {
     background-color: #444;
 }
+
+.submit-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0rem 0.2rem 0rem;
+}
+
+.submit-details > h1 {
+    font-size: 45px;
+}
+
+.about-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+.about-page > h1 {
+    font-size: 45px;
+    text-decoration: underline;
+
+}
+
+.odin-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.odin-details > a img {
+    height: 200px;
+    width: 180px;
+}
+
+.about-text {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+    max-width: 650px;
+}
+
+.my-details > p{
+    font-size: 45px;
+    text-decoration: underline;
+}
+
+.my-details > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
