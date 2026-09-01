@@ -6,6 +6,10 @@
     word-spacing: 0.5px;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: #2C2C2C;
     display: flex;
@@ -29,15 +33,47 @@ body {
     font-size: 40px;
 }
 
-.options {
+.options{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     row-gap: 5px;
+    position: relative
+}
+
+.options > a {
+    padding-bottom: 10px;
+}
+
+.dropdown {
     position: relative;
 }
 
-.options > a{
-    text-decoration: none;
+.dropdown > a{
     padding-bottom: 10px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background-color: gray;
+    padding: 10px 0;
+    min-width: 150px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+.dropdown-menu > a {
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-menu > a:hover {
+    background-color: #444;
 }
